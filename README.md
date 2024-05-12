@@ -1,41 +1,55 @@
-# projeto_imersao_alura
+# Descrição do Projeto: Sistema de Alerta e Informações sobre Enchentes no RS
 
-## Sistema de informações sobre enchentes no RS
+Este projeto visa fornecer informações atualizadas e relevantes sobre enchentes no Rio Grande do Sul, utilizando a API do Gemini Pro e o Google Custom Search Engine (CSE). O sistema permite aos usuários pesquisar por notícias sobre enchentes, locais de doação, itens necessários para doação, alertas da Defesa Civil e até mesmo prever áreas de risco com base em dados históricos e previsão do tempo.
 
-Utilizando a API do Google e o modelo Gemini Pro, este sistema centraliza dados sobre alertas, locais de doação, itens necessários e avisos da Defesa Civil. O acesso a informações cruciais é facilitado, auxiliando a população em momentos de crise.
+## Funcionalidades:
 
-### Funcionalidades
+- **Informações sobre Enchentes**: Busca e resume as últimas notícias sobre enchentes no RS, permitindo que o usuário faça perguntas sobre as notícias exibidas.
+- **Locais de Doação**: Encontra e exibe informações sobre locais de doação em cidades específicas do RS, com a opção de fazer perguntas sobre os locais.
+- **Itens Necessários para Doação**: Busca informações sobre os itens mais necessários para doação em diferentes cidades do RS, com a opção de fazer perguntas sobre os itens.
+- **Informações da Defesa Civil**: Apresenta alertas e informações da Defesa Civil do RS sobre enchentes, com a opção de fazer perguntas sobre os alertas.
+- **Previsão de Áreas de Risco**: Utiliza dados históricos de enchentes e previsão do tempo para identificar áreas com maior risco de inundação em uma cidade.
 
-- **Informações sobre Enchentes:** Busca e resume notícias sobre enchentes no estado, permitindo perguntas detalhadas.
-- **Alertas Personalizados:** Gera alertas personalizados para cidades específicas, incluindo áreas afetadas e recomendações de segurança.
-- **Lugares para Doação:** Exibe informações sobre locais de doação, permitindo interações detalhadas.
-- **Itens Necessários para Doação:** Mostra os itens necessários em diferentes locais, com possibilidade de perguntas específicas.
-- **Informações da Defesa Civil:** Resume avisos e alertas, facilitando a disseminação de informações oficiais.
+## Menu:
 
-### Recursos Utilizados
+O menu principal oferece as seguintes opções:
 
-- **Google Custom Search API:** Para buscar notícias e informações relevantes na web.
-- **Gemini Pro:** Para resumir notícias e gerar alertas personalizados.
-- **Geopy:** Para validar localizações informadas.
-- **BeautifulSoup:** Para extrair informações de páginas HTML.
-- **Markdown:** Para formatar a saída de texto.
+1. **Últimas Informações sobre as Enchentes no RS**: Exibe notícias recentes sobre enchentes no estado, com a opção de fazer perguntas sobre as notícias.
+2. **Lugares para Doações**: Permite buscar informações sobre locais de doação em cidades específicas do RS, com a opção de fazer perguntas sobre os locais.
+3. **Ítens Necessários para Doações**: Mostra informações sobre itens necessários para doação em diferentes cidades do RS, com a opção de fazer perguntas sobre os itens.
+4. **Informações Urgentes da Defesa Civil**: Apresenta alertas e informações da Defesa Civil sobre enchentes, com a opção de fazer perguntas sobre os alertas.
+5. **Prever Áreas de Risco**: Solicita o nome da cidade e utiliza dados históricos e previsão do tempo para prever áreas de risco.
+6. **Sair**: Encerra o programa.
 
-### Como Utilizar
+## Passo a Passo:
 
-1. Clone o repositório.
-2. Instale as dependências: `pip install google-api-python-client google-search-results geopy`
-3. Obtenha sua chave de API do Google e substitua `SUA_API_KEY` no código.
-4. Obtenha seu ID do mecanismo de pesquisa do Google e substitua `SEU_SEARCH_ENGINE_ID` no código.
-5. Execute o script `main.py` e siga as instruções do menu.
+### Instalação das bibliotecas:
 
-### Contribuições
+Execute os comandos `!pip install` fornecidos para instalar as bibliotecas necessárias.
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+### Configuração das chaves de API:
 
-### Observações
+Substitua `GOOGLE_API_KEY` e `SEARCH_ENGINE_ID` pelas suas chaves de API do Google CSE.
 
-Este projeto é um protótipo e pode conter erros ou limitações. O uso da API do Google está sujeito a limites e pode gerar custos. As informações são para fins informativos e não substituem aconselhamento oficial.
+### Execução do menu principal:
 
-### Licença
+O programa exibirá o menu principal.
 
-Este projeto está licenciado sob a licença MIT.
+### Escolha uma opção:
+
+Digite o número da opção desejada e pressione Enter.
+
+### Interação com as funcionalidades:
+
+Siga as instruções na tela para utilizar a funcionalidade escolhida.
+
+### Retorno ao menu principal:
+
+Após utilizar uma funcionalidade, você retornará ao menu principal para escolher outra opção.
+
+## Observações:
+
+- Certifique-se de ter uma conexão com a internet para utilizar as funcionalidades de busca e resumo de notícias.
+- As previsões de áreas de risco são baseadas em dados históricos e previsão do tempo, e não devem ser consideradas como garantias absolutas.
+- Este projeto é apenas um exemplo e pode ser expandido e personalizado de acordo com suas necessidades.
+
